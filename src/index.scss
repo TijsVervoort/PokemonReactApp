@@ -1,0 +1,199 @@
+@import "./scss/reset.scss";
+@import "./scss/colours.scss";
+@import "./scss/variables.scss";
+
+.root {
+  padding: $largePadding;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+}
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+  // vertical-align: middle;
+}
+
+.error {
+  color: $clrFighting;
+}
+
+.row {
+  display: flex;
+  align-items: space-between;
+}
+
+.primaryTitle {
+  color: $clrSecondary;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding-bottom: $smallPadding;
+}
+
+.inputField {
+  padding: $smallPadding;
+  border: 2px solid $clrPrimary;
+  color: $clrDisabled;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: $smallPadding;
+}
+
+.list {
+  overflow: scroll;
+  max-height: 600px;
+}
+
+.listItem {
+  border: 1px solid $clrPrimary;
+  border-radius: 5px;
+  color: $clrSecondary;
+  background: $clrPrimary;
+  margin-bottom: $smallPadding;
+  padding: $smallPadding;
+  text-transform: uppercase;
+  transition: $standardTransition;
+  &:hover {
+    transition: $standardTransition;
+    border: 1px solid $clrPrimary;
+    color: $clrPrimary;
+    background: $clrSecondary;
+    cursor: pointer;
+  }
+}
+
+.filterColumn {
+  padding: $largePadding;
+  width: 20%;
+  display: block;
+}
+
+.overView {
+  padding: $largePadding;
+  width: 80%;
+  display: block;
+}
+
+.selectColumn {
+  width: 25%;
+  padding: $largePadding;
+  display: block;
+  img {
+    display: block;
+  }
+
+  .button {
+    background: $clrPrimary;
+    text-transform: uppercase;
+    color: $clrBackground;
+    padding: $largePadding;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    border: 1px solid $clrPrimary;
+    transition: $standardTransition;
+    &:hover {
+      transition: $standardTransition;
+      background: $clrBackground;
+      color: $clrPrimary;
+      border: 1px solid $clrPrimary;
+    }
+  }
+
+  .movesColumn {
+    height: 650px;
+    overflow: scroll;
+    h1 {
+      text-transform: uppercase;
+      padding-bottom: $smallPadding;
+      padding-top: $smallPadding;
+      color: $clrSecondary;
+    }
+  }
+
+  ul li {
+    color: $clrPrimary;
+    cursor: pointer;
+    text-transform: capitalize;
+    &:hover {
+      color: $clrSecondary;
+    }
+  }
+}
+
+.pokeName {
+  color: $clrPrimary;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.midColumn {
+  width: 50%;
+  padding: $largePadding;
+  display: block;
+}
+
+.statRow {
+  display: flex;
+  align-items: space-between;
+  flex-wrap: wrap;
+  margin-bottom: $smallPadding;
+}
+
+.halfColumn {
+  width: 50%;
+  padding: 0;
+  display: block;
+  text-align: right;
+  .stat {
+    text-transform: uppercase;
+    color: $clrSecondary;
+    padding-right: $smallPadding;
+  }
+
+  .statValue {
+    text-transform: uppercase;
+    color: $clrPrimary;
+    font-size: 3rem;
+    padding-right: $smallPadding;
+  }
+}
+
+.halfColumnBorder {
+  text-align: left;
+  width: 42%;
+  padding: $largePadding;
+  display: block;
+  text-align: left;
+  border: 1px solid $clrPrimary;
+  margin-bottom: $smallPadding;
+  margin-right: $smallPadding;
+  .stat {
+    display: block;
+    text-transform: uppercase;
+    color: $clrSecondary;
+    padding-right: $smallPadding;
+  }
+
+  .statValue {
+    font-size: 1rem;
+    display: block;
+    text-transform: uppercase;
+    color: $clrPrimary;
+    padding-right: $smallPadding;
+  }
+}
+
+.centeredTitle {
+  color: $clrPrimary;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-bottom: $smallPadding;
+}
